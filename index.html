@@ -151,9 +151,16 @@
 
     <section class="modal modal-write-us">
       <h2>Напишите нам</h2>
-      <!-- Здесь будет форма -->
-      <button class="button" type="submit">Отправить</button>
-      <button class="modal-close">x</button>
+      <form action="http://echo.htmlacademy.ru" method="post">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="email-field" placeholder="email@example.com">
+        <label for="text-field">Текст письма:</label>
+        <textarea name="text" id="text-field" rows="4" placeholder="В свободной форме"></textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
   </body>
 </html>
