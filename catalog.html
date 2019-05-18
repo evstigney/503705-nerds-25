@@ -27,7 +27,27 @@
     <h1 class="page-header">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры товара</h2>
-      <!-- Сортировать - пока сказали не раазмечать -->
+      <div class="product-filter-group product-filter-order">
+        <span class="visually-hidden">Сортировка показа продуктов на странице</span>
+        <b class="product-filter-header">Сортировать:</b>
+        <ul class="product-filter-list">
+          <li class="product-filter-item product-filter-item-current">
+            <a>по цене</a>
+          </li>
+          <li class="product-filter-item">
+            <a href="#">по типу</a>
+          </li>
+          <li class="product-filter-item">
+            <a href="#">по названию</a>
+          </li>
+        </ul>
+        <button class="filter-order filter-decreasing">
+          <span class="visually-hidden">в порядке убывания</span>
+        </button>
+        <button class="filter-order filter-increasing">
+          <span class="visually-hidden">в порядке возрастания</span>
+        </button>
+      </div>
       <form class="product-filter-form" action="http://echo.htmlacademy.ru" method="post" oninput="priceOutputMin.value=priceRangeMin.value; priceOutputMax.value=priceRangeMax.value">
         <fieldset class="product-filter-group">
           <legend class="product-filter-header">Стоимость:</legend>
