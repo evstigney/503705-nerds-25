@@ -27,9 +27,32 @@
     <h1 class="page-header">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры товара</h2>
-      <!-- Стоимость - пока сказали не размечать -->
       <!-- Сортировать - пока сказали не раазмечать -->
-      <form class="product-filter-form" action="http://echo.htmlacademy.ru" method="post">
+      <form class="product-filter-form" action="http://echo.htmlacademy.ru" method="post" oninput="priceOutputMin.value=priceRangeMin.value; priceOutputMax.value=priceRangeMax.value">
+        <fieldset class="product-filter-group">
+          <legend class="product-filter-header">Стоимость:</legend>
+          <label class="visually-hidden" for="price-range-min">
+            Выберите минимальную стоимость
+          </label>
+          <input type="range" name="priceRangeMin" id="price-range-min" min="0" max="10000" step="100">
+          <label class="visually-hidden" for="price-range-max">
+            Выберите максимальную стоимость
+          </label>
+          <input type="range" name="priceRangeMax" id="price-range-max" min="10100" max="20000" step="100">
+          <div class="price-output-container">
+          <b class="visually-hidden">
+            Вы выбрали стоимость:
+          </b>
+          <label class="price-output output-min">
+            от
+            <output name="priceOutputMin">0</output>
+          </label>
+          <label class="price-output output-max">
+            до
+            <output name="priceOutputMax">15000</output>
+          </label>
+          </div>
+        </fieldset>
         <fieldset class="product-filter-group">
           <legend class="product-filter-header">Сетка:</legend>
           <label class="product-filter-item">
