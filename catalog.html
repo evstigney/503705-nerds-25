@@ -27,7 +27,25 @@
     <h1 class="page-header">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтры товара</h2>
-      <!-- Здесь будет форма -->
+      <!-- Стоимость - пока сказали не размечать -->
+      <!-- Сортировать - пока сказали не раазмечать -->
+      <form class="product-filter-form" action="http://echo.htmlacademy.ru" method="post">
+        <fieldset class="product-filter-group">
+          <legend class="product-filter-header">Сетка:</legend>
+          <label class="product-filter-item">
+            <input type="radio" name="grid" value="adaptive" checked>
+            Адаптивная
+          </label>
+          <label class="product-filter-item">
+            <input type="radio" name="grid" value="fixed">
+            Фиксированная
+          </label>
+          <label class="product-filter-item">
+            <input type="radio" name="grid" value="rubber">
+            Резиновая
+          </label>
+        </fieldset>
+      </form>
     </section>
     <section class="variety">
       <h2 class="visually-hidden">Каталог товаров</h2>
