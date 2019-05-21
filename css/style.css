@@ -15,6 +15,28 @@ a {
   text-decoration: none;
 }
 
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #fb565a;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+}
+
 .page-header {
   font-size: 16px;
   line-height: 30px;
@@ -47,4 +69,44 @@ a {
   color: #000000;
 
   opacity: 0.3;
+}
+
+.main-slider {
+  color: #283136;
+
+  background-color: #eeeeee;
+}
+
+.main-slider-list {
+  list-style: none;
+}
+
+.main-slider-item {
+  /* высота выставлена временно, чтобы фон был виден целиком */
+  min-height: 430px;
+}
+
+.main-slider-item:nth-child(1) {
+  background-image: url("../img/slide1.png");
+  background-position: top 0 right 0;
+  background-repeat: no-repeat;
+}
+
+.main-slider-item:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-position: top 0 right 0;
+  background-repeat: no-repeat;
+}
+
+.main-slider-item:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-position: top 0 right 0;
+  background-repeat: no-repeat;
+}
+
+.main-slider-item b {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
 }
