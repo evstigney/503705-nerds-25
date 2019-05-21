@@ -24,6 +24,7 @@ a {
   vertical-align: middle;
 
   background-color: #fb565a;
+  border: none;
   box-shadow:
     0 0 4px 1px rgba(255, 255, 255, 0.3),
     inset 0 0 4px 1px rgba(255, 255, 255, 0.3);
@@ -223,4 +224,21 @@ a {
 .concept-table sup {
   font-size: 22px;
   font-weight: 400;
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.partners-item a img {
+  opacity: 0.2;
+}
+
+.partners-item a:hover img,
+.partners-item a:focus img {
+  opacity: 1;
+}
+
+.partners-item a:active img {
+  opacity: 0.1;
 }
