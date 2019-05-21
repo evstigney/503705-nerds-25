@@ -24,6 +24,9 @@ a {
   vertical-align: middle;
 
   background-color: #fb565a;
+  box-shadow:
+    0 0 4px 1px rgba(255, 255, 255, 0.3),
+    inset 0 0 4px 1px rgba(255, 255, 255, 0.3);
 }
 
 .button:hover,
@@ -35,6 +38,34 @@ a {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
+  box-shadow:
+    inset 0 3px 1px 0 rgba(0, 1, 1, 0.1);
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
 }
 
 .page-header {
@@ -109,4 +140,87 @@ a {
   line-height: 55px;
   font-weight: 500;
   color: #000000;
+}
+
+.services-list {
+  list-style: none;
+}
+
+/* параметры отступа заданы временно, чтобы был виден фон */
+.services-item {
+  padding-top: 146px;
+}
+
+.services-item:nth-child(1) {
+  background-image: url("../img/index-illustration-1-300x146.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.services-item:nth-child(2) {
+  background-image: url("../img/index-illustration-2-300x146.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.services-item:nth-child(3) {
+  background-image: url("../img/index-illustration-3-300x146.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.about-us-header {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.about-us b {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.about-us-list {
+  list-style: none;
+}
+
+.concept-table {
+  border: none;
+}
+
+.concept-table td,
+.concept-table th {
+  border: none;
+}
+
+.concept-table th {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.concept-table td {
+  font-size: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.concept-table sup {
+  font-size: 22px;
+  font-weight: 400;
 }
