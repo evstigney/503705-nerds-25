@@ -296,9 +296,9 @@ a {
   font-weight: 500;
 }
 
-.modal input[type="text"],
-.modal input[type="email"],
-.modal textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   font: inherit;
   font-weight: 400;
   color: #444444;
@@ -308,27 +308,32 @@ a {
   outline: none;
 }
 
-.modal input[type="text"]:invalid,
-.modal input[type="email"]:invalid,
-.modal textarea:invalid {
-  color: #e74246;
-
-  border-color: #e74246;
-}
-
-.modal input[type="text"]:hover,
-.modal input[type="email"]:hover,
-.modal textarea:hover {
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
   border-color: #b4b9bb;
 }
 
-.modal input[type="text"]:focus,
-.modal input[type="email"]:focus,
+.modal input[type="text"]:valid:focus,
+.modal input[type="email"]:valid:focus,
 .modal textarea:focus {
   color: #444444;
 
   border-color: #000000;
 }
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+textarea:invalid,
+input[type="text"]:invalid:hover,
+input[type="email"]:invalid:hover,
+textarea:invalid:hover {
+  color: #e74246;
+
+  border-color: #e74246;
+}
+
+
 
 .modal-close {
   width: 21px;
@@ -337,7 +342,7 @@ a {
   background-color: transparent;
   background-image: url("../img/close-cross.svg");
   background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
 
   border: none;
 
