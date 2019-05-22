@@ -275,6 +275,12 @@ a {
   opacity: 0.3;
 }
 
+.social-slogan {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
