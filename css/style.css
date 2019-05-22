@@ -379,6 +379,49 @@ textarea:invalid:hover {
   opacity: 1;
 }
 
+.triangle {
+  display: inline-block;
+  position: relative;
+  width: 13px;
+  height: 10px;
+
+  overflow: hidden;
+}
+
+.triangle::before {
+  content: "";
+  position: absolute;
+
+  border-style: solid;
+  border-width: 10px 6px;
+  border-color: #000000 transparent;
+}
+
+.filter-decreasing .triangle::before {
+  top: 0;
+  left: 0;
+}
+
+.filter-order .triangle {
+  opacity: 0.3;
+}
+
+.filter-order:hover .triangle,
+.filter-order:focus .triangle {
+  opacity: 0.6;
+}
+
+.filter-order:active .triangle,
+.filter-order-current .triangle,
+.filter-order-current:hover .triangle,
+.filter-order-current:focus .triangle {
+  opacity: 1;
+}
+
+.filter-increasing .triangle::before {
+  top: -10px;
+}
+
 .modal-close {
   width: 21px;
   height: 21px;
