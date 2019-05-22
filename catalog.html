@@ -56,15 +56,17 @@
       <form class="product-filter-form" action="https://echo.htmlacademy.ru" method="post" oninput="priceOutputMin.value=priceRangeMin.value; priceOutputMax.value=priceRangeMax.value">
         <fieldset class="product-filter-group">
           <legend class="product-filter-header">Стоимость:</legend>
-          <label class="visually-hidden" for="price-range-min">
-            Выберите минимальную стоимость
-          </label>
-          <input type="range" name="priceRangeMin" id="price-range-min" min="0" max="10000" step="100">
-          <label class="visually-hidden" for="price-range-max">
-            Выберите максимальную стоимость
-          </label>
-          <input type="range" name="priceRangeMax" id="price-range-max" min="10100" max="20000" step="100">
-          <div class="price-output-container">
+          <div class="range-wrapper">
+            <label class="visually-hidden" for="price-range-min">
+              Выберите минимальную стоимость
+            </label>
+            <input type="range" name="priceRangeMin" id="price-range-min" min="0" max="10000" step="100">
+            <label class="visually-hidden" for="price-range-max">
+              Выберите максимальную стоимость
+            </label>
+            <input type="range" name="priceRangeMax" id="price-range-max" min="10100" max="20000" step="100">
+          </div>
+          <div class="price-output-wrapper">
           <b class="visually-hidden">
             Вы выбрали стоимость:
           </b>

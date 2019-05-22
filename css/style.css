@@ -81,6 +81,10 @@ a {
   list-style: none;
 }
 
+.shop-cart {
+  margin-bottom: 0;
+}
+
 .main-menu a,
 .shop-cart a {
   color: #000000;
@@ -143,6 +147,8 @@ a {
 }
 
 .inner-page h1 {
+  margin-top: 0;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -402,6 +408,10 @@ textarea:invalid:hover {
   left: 0;
 }
 
+.filter-increasing .triangle::before {
+  top: -10px;
+}
+
 .filter-order .triangle {
   opacity: 0.3;
 }
@@ -418,8 +428,28 @@ textarea:invalid:hover {
   opacity: 1;
 }
 
-.filter-increasing .triangle::before {
-  top: -10px;
+.product-filter-group {
+  border: none;
+}
+
+.product-filter-form {
+  line-height: 20px;
+}
+
+.product-filter-form .product-filter-header {
+  line-height: 30px;
+}
+
+.range-wrapper {
+  background-color: #eeeeee;
+}
+
+.price-output output {
+  font: inherit;
+  line-height: 22px;
+
+  background-color: #eeeeee;
+  border: none;
 }
 
 .modal-close {
