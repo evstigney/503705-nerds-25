@@ -142,6 +142,15 @@ a {
   color: #000000;
 }
 
+.inner-page h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
 .services-list {
   list-style: none;
 }
@@ -333,7 +342,42 @@ textarea:invalid:hover {
   border-color: #e74246;
 }
 
+.product-filter-header {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
 
+  background-color: #ffffff;
+}
+
+.product-filter-list {
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-filter-item a {
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.product-filter-item a:hover,
+.product-filter-item a:focus {
+  opacity: 0.6;
+}
+
+.product-filter-item a:active,
+.product-filter-item-current a,
+.product-filter-item-current a:hover,
+.product-filter-item-current a:focus {
+  opacity: 1;
+}
 
 .modal-close {
   width: 21px;
