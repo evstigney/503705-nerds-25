@@ -299,7 +299,7 @@ a {
 .modal {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
 
   background-color: #ffffff;
@@ -312,11 +312,16 @@ a {
   font-weight: 500;
 }
 
+.modal label {
+  font-weight: 700;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
-  font: inherit;
-  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
   color: #444444;
 
   background-color: transparent;
@@ -449,7 +454,7 @@ textarea:invalid:hover {
 }
 
 .price-output output {
-  font: inherit;
+  font-size: inherit;
   line-height: 22px;
 
   background-color: #eeeeee;
