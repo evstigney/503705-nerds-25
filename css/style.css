@@ -331,46 +331,25 @@ a {
 }
 
 .modal-close {
-  position: relative;
-
-  display: inline-block;
   width: 21px;
   height: 21px;
 
   background-color: transparent;
-  border: none;
-}
+  background-image: url("../img/close-cross.svg");
+  background-position: center center;
+  background-repeat: none;
 
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  left: -4px;
-  top: 9px;
-
-  width: 30px;
   border: none;
-  border-top: 4px solid #e74246;
+
   opacity: 0.3;
 }
 
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-}
-
-.modal-close:hover::before,
-.modal-close:hover::after,
-.modal-close:focus::before,
-.modal-close:focus::after {
+.modal-close:hover,
+.modal-close:focus {
   opacity: 1;
 }
 
-.modal-close:active::before,
-.modal-close:active::after {
+.modal-close:active {
   opacity: 0.1;
 }
 
