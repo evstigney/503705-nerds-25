@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  margin-bottom: 65px;
+  margin-bottom: 55px;
 }
 
 /*------------------------------------- РАЗМЕТКА СЕТКИ ----------------------*/
@@ -27,18 +27,8 @@ body > * {
   outline: 1px solid blueviolet;
 }
 
-<<<<<<< HEAD
-.partners,
-.contacts {
-  outline: 1px solid orange;
-}
-
-.map {
-  outline: 1px solid red;
-=======
 .page-footer .layout-positioner > * {
   outline: 1px solid lime;
->>>>>>> dev
 }
 */
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
