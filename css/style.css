@@ -18,7 +18,7 @@ main {
 /*------------------------------------- РАЗМЕТКА СЕТКИ ----------------------*/
 
 /*------------ВСПОМОГАТЕЛЬНЫЕ РАМКИ------------*/
-
+/*
 body > * {
   outline: 1px solid hotpink;
 }
@@ -30,6 +30,7 @@ body > * {
 .page-footer .layout-positioner > * {
   outline: 1px solid lime;
 }
+*/
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
@@ -353,13 +354,13 @@ main > .layout-positioner {
 
 .page-footer .layout-positioner {
   display: flex;
-  justify-content: space-between;
 }
 
 .social-list {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-right: 135px;
 }
 
 .social-item {
@@ -375,11 +376,14 @@ main > .layout-positioner {
   margin: 0;
   margin-top: 5px;
   padding: 0;
-  padding-right: 55px;
 }
 
 .social-slogan {
   margin-bottom: 9px;
+}
+
+.page-footer {
+  padding-bottom: 60px;
 }
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
