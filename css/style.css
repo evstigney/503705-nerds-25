@@ -11,6 +11,9 @@ body {
   background-color: #ffffff;
 }
 
+main {
+  margin-bottom: 65px;
+}
 /*------------------------------------- РАЗМЕТКА СЕТКИ ----------------------*/
 
 /*------------ВСПОМОГАТЕЛЬНЫЕ РАМКИ------------*/
@@ -326,9 +329,6 @@ main > .layout-positioner {
   position: relative;
 }
 
-.map {
-}
-
 .contacts-card {
   position: absolute;
   top: 55px;
@@ -352,6 +352,42 @@ main > .layout-positioner {
 .contacts-card p:last-of-type {
   margin-bottom: 40px;
 }
+
+.page-footer .layout-positioner {
+  display: flex;
+}
+
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 135px;
+}
+
+.social-item {
+  margin: 0;
+  padding: 0;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social-offer {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.social-slogan {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.page-footer {
+  padding-bottom: 60px;
+}
+
 
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
@@ -681,6 +717,12 @@ a {
 
 .social-item a:active img {
   opacity: 0.3;
+}
+
+.social-offer {
+  font-size: inherit;
+  line-height: 22px;
+  color: #444444;
 }
 
 .social-slogan {
