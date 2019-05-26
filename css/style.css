@@ -38,12 +38,11 @@ main > .layout-positioner,
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
-  max-width: 1160px;
+  max-width: 1200px;  /* ПРИ ВЕРСТКЕ УДОБНО ПОСТАВИТЬ 1160px */
   margin: 0 auto;
-  /*  не забыть изменить макс ширину и добавить эти паддинги !!!!!!!!!!
-  padding-right: 20px;
+  padding-right: 20px;   /* И УБРАТЬ ПАДДИНГИ */
   padding-left: 20px;
-  */
+
 }
 
 .page-header {
