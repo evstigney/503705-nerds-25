@@ -14,27 +14,25 @@ body {
 main {
   margin-bottom: 65px;
 }
+
 /*------------------------------------- РАЗМЕТКА СЕТКИ ----------------------*/
 
 /*------------ВСПОМОГАТЕЛЬНЫЕ РАМКИ------------*/
-/*
-body > * {
+.product-wrapper {
+  outline: 1px solid gold;
+}
+
+.product-wrapper > * {
   outline: 1px solid hotpink;
 }
 
-.layout-positioner {
-  outline: 1px solid blueviolet;
+.product-filter-order {
+  outline: 1px solid darkcyan;
 }
 
-main > .layout-positioner,
-.contacts {
-  outline: 1px solid orange;
+.product-filter-order > * {
+  outline: 1px solid lime;
 }
-
-.partners-item {
-  outline: 1px solid red;
-}
-*/
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
@@ -391,6 +389,55 @@ main > .layout-positioner {
   background-color: #eeeeee;
 }
 
+.product-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 260px;
+}
+
+.product-filter-order {
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.product-filter-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.product-filter-header {
+  margin-right: auto;
+}
+
+.product-filter-item {
+  margin: 0;
+  padding: 0;
+}
+
+.variety {
+ display: flex;
+ flex-direction: column;
+ width: 760px;
+}
+
+.variety-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+}
+
+.variety-item {
+  margin: 0;
+  padding: 0;
+}
 
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
