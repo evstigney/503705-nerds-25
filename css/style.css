@@ -22,15 +22,15 @@ body > * {
 .layout-positioner {
   outline: 1px solid blueviolet;
 }
-
-.layout-positioner > section {
+/*
+.partners-list {
   outline: 1px solid orange;
 }
 
-.about-us > * {
+.partners-item {
   outline: 1px solid red;
 }
-
+*/
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
@@ -170,7 +170,8 @@ p.shop-cart {
 }
 
 .services {
-  margin-bottom: 120px;
+  margin-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .services-list {
@@ -196,6 +197,7 @@ p.shop-cart {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 45px;
 }
 
 .about-us p {
@@ -278,6 +280,44 @@ p.about-us-header {
   position: relative;
   top: -18px;
 }
+
+.partners {
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+.partners-item {
+  position: relative;
+
+  display: inline-block;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.partners-item:not(:last-child)::after {
+  position: absolute;
+  top: 5px;
+  right: 0;
+
+  width: 2px;
+  height: 50px;
+  background-color: #eeeeee;
+
+  content: "";
+}
+
+
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
 a {
@@ -443,6 +483,10 @@ a {
   background-color: #eeeeee;
 }
 
+.services {
+  border-bottom: 2px solid #eeeeee;
+}
+
 .services-list {
   list-style: none;
 }
@@ -527,6 +571,11 @@ a {
 .concept-table sup {
   font-size: 22px;
   font-weight: 400;
+}
+
+.partners {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .partners-list {
