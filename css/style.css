@@ -22,12 +22,13 @@ body > * {
 .layout-positioner {
   outline: 1px solid blueviolet;
 }
-/*
-.partners-list {
+
+.partners,
+.contacts {
   outline: 1px solid orange;
 }
 
-.partners-item {
+.map {
   outline: 1px solid red;
 }
 */
@@ -282,6 +283,7 @@ p.about-us-header {
 }
 
 .partners {
+  margin-bottom: 90px;
   padding-top: 50px;
   padding-bottom: 35px;
 }
@@ -317,6 +319,10 @@ p.about-us-header {
   content: "";
 }
 
+.contacts .layout-positioner {
+  position: fixed;
+  display: none;
+}
 
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
