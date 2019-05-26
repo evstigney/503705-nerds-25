@@ -23,17 +23,10 @@ body > * {
   outline: 1px solid blueviolet;
 }
 
-.services {
+.layout-positioner > section {
   outline: 1px solid orange;
 }
 
-.services-list {
-  outline: 1px solid forestgreen;
-}
-
-.services-item {
-  outline: 1px solid palevioletred;
-}
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
@@ -172,6 +165,10 @@ p.shop-cart {
   margin-top: 45px;
 }
 
+.services {
+  margin-bottom: 120px;
+}
+
 .services-list {
   display: flex;
   margin: 0;
@@ -189,6 +186,22 @@ p.shop-cart {
 .services-item p {
   width: 260px;
   margin-bottom: 35px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-us p {
+  margin: 0;
+  padding: 0;
+}
+
+p.about-us-header {
+  max-width: 665px;
+  padding-top: 35px;
 }
 
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
