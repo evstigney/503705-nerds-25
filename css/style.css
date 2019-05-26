@@ -11,6 +11,10 @@ body {
   background-color: #ffffff;
 }
 
+main {
+  margin-bottom: 65px;
+}
+
 /*------------------------------------- РАЗМЕТКА СЕТКИ ----------------------*/
 
 /*------------ВСПОМОГАТЕЛЬНЫЕ РАМКИ------------*/
@@ -19,19 +23,13 @@ body > * {
   outline: 1px solid hotpink;
 }
 
-.layout-positioner {
+.page-footer .layout-positioner {
   outline: 1px solid blueviolet;
 }
 
-main > .layout-positioner,
-.contacts {
-  outline: 1px solid orange;
+.page-footer .layout-positioner > * {
+  outline: 1px solid lime;
 }
-
-.partners-item {
-  outline: 1px solid red;
-}
-
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
@@ -353,6 +351,36 @@ main > .layout-positioner {
   margin-bottom: 40px;
 }
 
+.page-footer .layout-positioner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  margin: 0;
+  padding: 0;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social-offer {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  padding-right: 55px;
+}
+
+.social-slogan {
+  margin-bottom: 9px;
+}
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
 a {
@@ -684,9 +712,15 @@ a {
 }
 
 .social-slogan {
+  display: block;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+}
+
+.social-offer {
+  font-size: inherit;
+  line-height: 22px;
 }
 
 .modal {
