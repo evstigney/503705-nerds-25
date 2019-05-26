@@ -22,15 +22,16 @@ body > * {
 .layout-positioner {
   outline: 1px solid blueviolet;
 }
-/*
-.partners-list {
+
+main > .layout-positioner,
+.contacts {
   outline: 1px solid orange;
 }
 
 .partners-item {
   outline: 1px solid red;
 }
-*/
+
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
@@ -317,6 +318,40 @@ p.about-us-header {
   content: "";
 }
 
+main > .layout-positioner {
+  margin-bottom: 80px;
+}
+
+.contacts {
+  position: relative;
+}
+
+.map {
+}
+
+.contacts-card {
+  position: absolute;
+  top: 55px;
+
+  width: 220px;
+  padding: 50px;
+}
+
+.contacts-card h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.contacts-card p {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.contacts-card p:last-of-type {
+  margin-bottom: 40px;
+}
 
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
@@ -326,6 +361,9 @@ a {
 
 .button {
   display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -381,14 +419,14 @@ a {
 
 .main-feature-item .button {
   width: 240px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .services-item .button {
   width: 160px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+}
+
+.contacts-card .button {
+  width: 220px;
 }
 
 .page-header {
@@ -593,6 +631,24 @@ a {
 
 .partners-item a:active img {
   opacity: 0.1;
+}
+
+.contacts-card {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+
+  background-color: #ffffff;
+}
+
+.contacts-card h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
 }
 
 .social-list {
