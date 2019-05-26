@@ -400,13 +400,14 @@ main > .layout-positioner {
 
 .product-filter-order {
   display: flex;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  height: 135px;
+  align-items: center;
 }
 
 .product-filter-list {
   display: flex;
   margin: 0;
+  margin-right: 45px;
   padding: 0;
 }
 
@@ -417,6 +418,14 @@ main > .layout-positioner {
 .product-filter-item {
   margin: 0;
   padding: 0;
+}
+
+.product-filter-item:not(:last-child) {
+  margin-right: 26px;
+}
+
+.filter-order:not(:last-of-type) {
+  margin-right: 15px;
 }
 
 .variety {
