@@ -23,6 +23,10 @@ body > * {
   outline: 1px solid green;
 }
 
+.page-header .layout-positioner > * {
+  outline: 1px solid darkcyan;
+}
+
 /*--------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
@@ -30,7 +34,64 @@ body > * {
   margin: 0 auto;
 }
 
+.page-header {
+  padding-top: 50px;
+}
 
+.page-header p {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header .layout-positioner {
+  display: flex;
+  justify-content: space-between;
+}
+
+p.logo {
+  margin-right: 200px;
+}
+
+.inner-page .logo:active {
+  opacity: 0.3;
+}
+
+.main-menu {
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+.main-menu-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+p.shop-cart {
+  position: relative;
+  padding-top: 25px;
+  padding-left: 40px;
+}
+
+.shop-cart::before {
+  position: absolute;
+  top: 32px;
+  left: 0;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: transparent;
+  background-image: url("../img/cart-icon-15x15.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  content: "";
+}
 /*------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ-------------*/
 
 a {
@@ -95,16 +156,13 @@ a {
   line-height: 30px;
   font-weight: 500;
   color: #000000;
+  text-transform: uppercase;
 
   background-color: #eeeeee;
 }
 
 .main-menu-list {
   list-style: none;
-}
-
-.shop-cart {
-  margin-bottom: 0;
 }
 
 .main-menu a,
