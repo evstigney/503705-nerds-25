@@ -27,6 +27,10 @@ body > * {
   outline: 1px solid orange;
 }
 
+.about-us > * {
+  outline: 1px solid red;
+}
+
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
@@ -199,11 +203,81 @@ p.shop-cart {
   padding: 0;
 }
 
-p.about-us-header {
+.about-us-wrapper {
   max-width: 665px;
   padding-top: 35px;
+  padding-bottom: 35px;
 }
 
+p.about-us-header {
+  margin-bottom: 35px;
+}
+
+.about-us-list {
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.about-us-item {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+  padding-bottom: 25px;
+}
+
+.about-us-item::before {
+  position: absolute;
+  left: 0;
+  top: 12px;
+
+  width: 26px;
+  height: 2px;
+  background-color: #fb565a;
+
+  content: "";
+}
+
+.about-us-concept {
+  text-align: center;
+}
+
+.concept-table {
+  margin: 0;
+  margin-top: 37px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.concept-table tbody {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.concept-table th,
+.concept-table td {
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.concept-table th {
+  width: 115px;
+
+  text-align: left;
+}
+
+.concept-table td {
+  padding-right: 22px;
+}
+
+.concept-table sup {
+  position: relative;
+  top: -18px;
+}
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
 a {
