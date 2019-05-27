@@ -193,22 +193,24 @@
               </section>
             </li>
           </ul>
+          <div class="pagination-wrapper">
+            <b class="visually-hidden">Список страниц с товарами</b>
+            <ul class="pagination-list">
+              <li>
+                <a  class="pagination-item pagination-current">1</a>
+              </li>
+              <li>
+                <a  class="pagination-item" href="#">2</a>
+              </li>
+              <li>
+                <a class="pagination-item" href="#">3</a>
+              </li>
+            </ul>
+            <a  class="pagination-item pagination-last" href="#">Следующая</a>
+          </div>
         </section>
       </div>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-current">
-          <a>1</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">3</a>
-        </li>
-      </ul>
-      <div class="pagination-item pagination-last">
-        <a  href="#">Следующая</a>
-      </div>
+    </div>
       <section class="contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="layout-positioner">
@@ -223,50 +225,49 @@
           <img src="img/map-1440x418.png" width="1440" height="418" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </div>
       </section>
-    </div>
-  </main>
-  <footer class="page-footer">
-    <div class="layout-positioner">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="http://vk.com">
-            <img src="img/vk-icon-26x15.png" width="26" height="15" alt="Логотип ВКонтакте">
-            <span class="visually-hidden">Нёрдс ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="http://facebook.com">
-            <img src="img/fb-icon-12x22.png" width="12" height="22" alt="Логотип Facebook">
-            <span class="visually-hidden">Нёрдс в Facebook</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="http://instagram.com">
-            <img src="img/insta-icon-21x21.png" width="21" height="21" alt="Логотип Instagram">
-            <span class="visually-hidden">Нёрдс в Instagram</span>
-          </a>
-        </li>
-      </ul>
-      <p class="social-offer">
-        <b class="social-slogan">Давайте дружить, это выгодно!</b>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
-    </div>
-  </footer>
+    </main>
+    <footer class="page-footer">
+      <div class="layout-positioner">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="http://vk.com">
+              <img src="img/vk-icon-26x15.png" width="26" height="15" alt="Логотип ВКонтакте">
+              <span class="visually-hidden">Нёрдс ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="http://facebook.com">
+              <img src="img/fb-icon-12x22.png" width="12" height="22" alt="Логотип Facebook">
+              <span class="visually-hidden">Нёрдс в Facebook</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="http://instagram.com">
+              <img src="img/insta-icon-21x21.png" width="21" height="21" alt="Логотип Instagram">
+              <span class="visually-hidden">Нёрдс в Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <p class="social-offer">
+          <b class="social-slogan">Давайте дружить, это выгодно!</b>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </footer>
 
-  <section class="modal modal-write-us">
-    <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label for="name-field">Ваше имя:</label>
-      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-      <label for="email-field">Ваш e-mail:</label>
-      <input type="email" name="e-mail" id="email-field" placeholder="email@example.com">
-      <label for="text-field">Текст письма:</label>
-      <textarea name="text" id="text-field" rows="4" placeholder="В свободной форме"></textarea>
-      <input class="button modal-button" type="submit" value="Отправить">
-    </form>
-    <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
-  </section>
-</body>
+    <section class="modal modal-write-us">
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="email-field" placeholder="email@example.com">
+        <label for="text-field">Текст письма:</label>
+        <textarea name="text" id="text-field" rows="4" placeholder="В свободной форме"></textarea>
+        <input class="button modal-button" type="submit" value="Отправить">
+      </form>
+      <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
+    </section>
+  </body>
 </html>

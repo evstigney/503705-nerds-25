@@ -461,6 +461,28 @@ main > .layout-positioner {
   padding: 0;
 }
 
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+
+  padding-top: 35px;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  margin: 0;
+  padding: 0;
+}
+
+li .pagination-item {
+  margin-right: 10px;
+}
+
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
 a {
@@ -1049,10 +1071,10 @@ textarea:invalid:hover {
 
 .variety-item-card {
   position: relative;
-  bottom: 255px;  /* это значение будет меняться потом */
+  bottom: 255px;
   left: 0;
 
-  display: none;        /*------------------------ не забыть убрать ------------------*/
+  display: none;        /*------------------------  убрать в разработке ------------------*/
 
   /*
   display: flex;
@@ -1106,30 +1128,43 @@ textarea:invalid:hover {
   list-style: none;
 }
 
-.pagination-item a {
+.pagination-item {
+  display: inline-block;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   line-height: 18px;
   font-weight: 500;
   color: #000000;
+  text-align: center;
+  text-transform: uppercase;
 
   background-color: #eeeeee;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-last {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
   background-color: #dfdfdf;
 }
 
-.pagination-item a:active {
+.pagination-item:active {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.pagination-current a,
-.pagination-current a:hover,
-.pagination-current a:focus,
-.pagination-current a:active {
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   color: #000000;
 
   background-color: #ffffff;
