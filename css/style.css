@@ -338,22 +338,13 @@ main > .layout-positioner {
 
 .map {
   position: absolute;
-<<<<<<< HEAD
   top: 0;
-=======
-  top: 50%;
->>>>>>> 1b780c31977bf152accb2f77c5dc9852db2068fe
   left: 50%;
 
   width: 100%;
   text-align: center;
 
-<<<<<<< HEAD
   transform: translate( -50%, 0);
-=======
-  transform: translate( -50%, -50%);
->>>>>>> 1b780c31977bf152accb2f77c5dc9852db2068fe
-  overflow: visible;
 }
 
 .contacts-card {
