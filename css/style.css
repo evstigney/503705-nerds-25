@@ -345,6 +345,7 @@ main > .layout-positioner {
   text-align: center;
 
   transform: translate( -50%, 0);
+  overflow: visible;
 }
 
 .contacts-card {
