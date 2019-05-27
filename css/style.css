@@ -448,6 +448,19 @@ main > .layout-positioner {
   padding: 0;
 }
 
+.variety-item-header {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.variety-item-card p {
+  width: 200px;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
 
 a {
@@ -522,6 +535,10 @@ a {
 
 .contacts-card .button {
   width: 220px;
+}
+
+.variety-item-card .button {
+  width: 200px;
 }
 
 .page-header {
@@ -1010,7 +1027,7 @@ textarea:invalid:hover {
 .variety-item {
   width: 360px;
   height: 616px;
-  margin-bottom: 40px; /* это значение в дальнейшем изменится */
+  margin-bottom: 30px;
 
   overflow: hidden;
 }
@@ -1032,14 +1049,20 @@ textarea:invalid:hover {
 
 .variety-item-card {
   position: relative;
-  bottom: 127px;  /* это значение будет меняться потом */
+  bottom: 255px;  /* это значение будет меняться потом */
   left: 0;
 
-  display: none;
+  display: none;        /*------------------------ не забыть убрать ------------------*/
 
-  /* значения ширины и отступов будут меняться */
-
-  width: 360px;
+  /*
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  */
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 30px;
 
   line-height: 18px;
   color: #666666;
@@ -1049,7 +1072,10 @@ textarea:invalid:hover {
 }
 
 .variety-item:hover .variety-item-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .variety-item-header {
