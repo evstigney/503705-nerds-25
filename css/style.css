@@ -322,6 +322,10 @@ main > .layout-positioner {
   margin-bottom: 80px;
 }
 
+.inner-main > .layout-positioner {
+  margin-bottom: 60px;
+}
+
 .contacts {
   position: relative;
 }
