@@ -307,18 +307,6 @@ p.about-us-header {
   padding: 0;
 }
 
-.partners-item:not(:last-child)::after {
-  position: absolute;
-  top: 3px;
-  right: -20px;
-
-  width: 2px;
-  height: 50px;
-  background-color: #eeeeee;
-
-  content: "";
-}
-
 main > .layout-positioner {
   margin-bottom: 80px;
 }
@@ -803,17 +791,29 @@ a {
   list-style: none;
 }
 
-.partners-item a img {
+.partners-item a {
   opacity: 0.2;
 }
 
-.partners-item a:hover img,
-.partners-item a:focus img {
+.partners-item a:hover,
+.partners-item a:focus {
   opacity: 1;
 }
 
-.partners-item a:active img {
+.partners-item a:active {
   opacity: 0.1;
+}
+
+.partners-item:not(:last-child)::after {
+  position: absolute;
+  top: 3px;
+  right: -20px;
+
+  width: 2px;
+  height: 50px;
+  background-color: #eeeeee;
+
+  content: "";
 }
 
 .contacts-card {
