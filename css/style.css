@@ -62,7 +62,7 @@ p.logo {
   position: relative;
   z-index: 2;
 
-  margin-right: 200px;
+  margin-right: 202px;
   height: 55px;
   overflow-y: visible;
 }
@@ -420,7 +420,7 @@ main > .layout-positioner {
 .filters {
   width: 260px;
 }
-
+/*----------------------- !!!!!!!!!! УБРАТЬ ВЫСОТУ !!!!!!!----------*/
 .product-filter-order {
   display: flex;
   height: 135px;
@@ -619,6 +619,25 @@ a {
   color: #000000;
 
   opacity: 0.3;
+}
+
+.main-menu-current a {
+  position: relative;
+}
+
+.main-menu-current a::after,
+.main-menu-current a:hover::after,
+.main-menu-current a:focus::after,
+.main-menu-current a:active::after {
+  position: absolute;
+  left: 2px;
+  bottom: -10px;
+  width: calc(100% - 3px);
+  height: 2px;
+
+  background-color: #fb565a;
+
+  content: "";
 }
 
 .main-slider {
