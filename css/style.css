@@ -290,7 +290,8 @@ p.about-us-header {
 
 .partners-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -301,16 +302,15 @@ p.about-us-header {
 .partners-item {
   position: relative;
 
-  display: inline-block;
-  width: 300px;
+  width: 260px;
   margin: 0;
   padding: 0;
 }
 
 .partners-item:not(:last-child)::after {
   position: absolute;
-  top: 5px;
-  right: 0;
+  top: 3px;
+  right: -20px;
 
   width: 2px;
   height: 50px;
