@@ -38,8 +38,8 @@ main {
 /*-----------------------------------------ОСН РАЗМЕТКА СЕТКИ---------*/
 
 .layout-positioner {
-  max-width: 1160px;  /* ПРИ ВЕРСТКЕ УДОБНО ПОСТАВИТЬ 1160px */
-  margin: 0 auto;       /* И УБРАТЬ ПАДДИНГИ */
+  max-width: 1160px;  /* ПРИ ВЕРСТКЕ УДОБНО */
+  margin: 0 auto;       /*  УБРАТЬ ПАДДИНГИ */
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -209,8 +209,8 @@ p.shop-cart {
 
 .about-us-wrapper {
   max-width: 665px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 32px;
+  padding-bottom: 37px;
 }
 
 p.about-us-header {
@@ -328,7 +328,6 @@ main > .layout-positioner {
   top: 0;
   left: 50%;
 
-  width: 100%;
   text-align: center;
 
   transform: translate( -50%, 0);
@@ -880,6 +879,10 @@ a {
 }
 
 .modal {
+  position: relative;
+  top: -760px;  /*--------------УБРАТЬ ДЛЯ СДАЧИ -------------*/
+  z-index: 10;  /*--------------ТОЖЕ-------------------------*/
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -899,17 +902,83 @@ a {
   font-weight: 700;
 }
 
+.modal-write-us {
+  display: flex;
+  flex-direction: column;
+
+  width: 765px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 95px;
+  padding-top: 65px;
+  padding-bottom: 85px;
+}
+
+.modal-write-us h2 {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+}
+
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.write-us-form label {
+  margin-bottom: 32px;
+}
+
+.write-us-form label:last-of-type {
+  margin-bottom: 47px;
+}
+
+.write-us-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.write-us-text-label {
+  width: 100%;
+}
+
+.write-us-form input[type="text"],
+.write-us-form input[type="email"] {
+  width: 361px;
+}
+
+.write-us-form input[type="text"] {
+  margin-right: 38px;
+}
+
 input[type="text"],
 input[type="email"],
-textarea {
+textarea[name="write-us-text"] {
+  box-sizing: border-box;
+  padding-left: 14px;
+  padding-right: 14px;
+
   font-size: inherit;
-  line-height: inherit;
+  line-height: 18px;
   font-weight: inherit;
   color: #444444;
+  vertical-align: middle;
 
   background-color: transparent;
   border: 2px solid #d7dcde;
   outline: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  line-height: 44px;
+}
+
+textarea[name="write-us-text"] {
+  width: 100%;
+  margin-bottom: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 input[type="text"]:hover,
@@ -935,6 +1004,11 @@ textarea:invalid:hover {
   color: #e74246;
 
   border-color: #e74246;
+}
+
+.modal-write-us .button {
+  padding-left: 82px;
+  padding-right: 82px;
 }
 
 .product-filter-header {
@@ -1219,6 +1293,10 @@ textarea:invalid:hover {
 }
 
 .modal-close {
+  position: absolute;
+  top: 79px;
+  right: 90px;
+
   width: 21px;
   height: 21px;
 
@@ -1241,7 +1319,7 @@ textarea:invalid:hover {
   opacity: 0.1;
 }
 
-.visually-hidden:not(:focus):not(:activer) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
