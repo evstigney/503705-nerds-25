@@ -168,7 +168,7 @@ p.shop-cart {
 }
 
 .main-feature-item .button {
-  margin-top: 45px;
+  margin-top: 42px;
 }
 
 .services {
@@ -506,8 +506,8 @@ a {
 
 .button {
   display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   font-size: 16px;
   line-height: 18px;
@@ -881,7 +881,8 @@ a {
 .modal {
   position: relative;
   top: -760px;  /*--------------УБРАТЬ ДЛЯ СДАЧИ -------------*/
-  z-index: 10;  /*--------------ТОЖЕ-------------------------*/
+  z-index: 10;   /*---------------            -------------*/
+  display: none;  /*--------------ТОЖЕ-------------------------*/
 
   font-size: 16px;
   line-height: 18px;
@@ -1328,7 +1329,7 @@ textarea:invalid:hover {
   border: 0;
   padding: 0;
 
-  white-space: no-wrap;
+  white-space: nowrap;
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
