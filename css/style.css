@@ -911,7 +911,7 @@ a {
   margin: 0 auto;
   padding-left: 100px;
   padding-right: 95px;
-  padding-top: 65px;
+  padding-top: 63px;
   padding-bottom: 85px;
 }
 
@@ -976,7 +976,7 @@ input[type="email"] {
 }
 
 textarea[name="write-us-text"] {
-  width: 100%;
+  width: 99%;
   margin-bottom: auto;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1295,7 +1295,7 @@ textarea:invalid:hover {
 
 .modal-close {
   position: absolute;
-  top: 79px;
+  top: 75px;
   right: 90px;
 
   width: 21px;
