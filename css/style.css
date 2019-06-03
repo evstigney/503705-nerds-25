@@ -528,6 +528,39 @@ input[type="radio"]:checked + .filter-radio-item::before {
   box-shadow: inset 0 0 0 4px #ffffff;
 }
 
+.filter-checkbox-item::before {
+  width: 23px;
+  height: 23px;
+
+  background-color: #ffffff;
+  border: 2px solid #b8b8b8;
+  border-radius: 2px;
+}
+
+.filter-checkbox-item::after {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  display: none;
+  width: 15px;
+  height: 6px;
+  box-sizing: border-box;
+
+  background-color: transparent;
+  box-shadow:
+    -1px 1px 0 1px #ffffff,
+    -3px 3px 0 3px #b8b8b8,
+    -4px 4px 0 4px #ffffff;
+
+  transform: rotate(-45deg);
+
+  content: "";
+}
+
+input[type="checkbox"]:checked + .filter-checkbox-item::after {
+  display: block;
+}
+
 .filter-order:not(:last-of-type) {
   margin-right: 15px;
 }
