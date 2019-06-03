@@ -347,7 +347,7 @@ main > .layout-positioner {
 
 .contacts-card h3 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   padding: 0;
 }
 
@@ -358,7 +358,7 @@ main > .layout-positioner {
 }
 
 .contacts-card p:last-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .page-footer .layout-positioner {
@@ -421,8 +421,12 @@ main > .layout-positioner {
 .product-filter-header {
   margin: 0;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   padding: 0;
+}
+
+.filter-header-price {
+  margin-bottom: 50px;
 }
 
 .range-wrapper {
@@ -489,6 +493,10 @@ main > .layout-positioner {
   text-transform: uppercase;
 }
 
+.filter-label-wrapper {
+  margin-bottom: 20px;
+}
+
 .product-filter-item {
   margin: 0;
   padding: 0;
@@ -540,7 +548,7 @@ main > .layout-positioner {
   display: flex;
   align-items: center;
 
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 .pagination-list {
@@ -1155,9 +1163,17 @@ textarea:invalid:hover {
 
 .product-filter-group {
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 25px;
   padding: 0;
   border: none;
+}
+
+.product-filter-group:first-of-type {
+  margin-bottom: 53px;
+}
+
+.product-filter-group:last-of-type {
+  margin-bottom: 32px;
 }
 
 .product-filter-order {
