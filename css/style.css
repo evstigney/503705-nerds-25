@@ -408,6 +408,7 @@ main > .layout-positioner {
 
 .filters {
   width: 260px;
+  margin-right: 20px;
 }
 
 .product-filter-list {
@@ -1291,10 +1292,13 @@ padding: 0;
 }
 
 .filter-button {
+  width: 100%;
+
   color: #000000;
   text-transform: uppercase;
 
   background-color: #eeeeee;
+  border-radius: 4px;
   outline: none;
 }
 
