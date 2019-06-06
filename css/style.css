@@ -594,9 +594,6 @@ input[type="checkbox"]:checked + .filter-checkbox-item::after {
   padding: 0;
 }
 
-.variety-item {
-}
-
 .variety-item-header {
   margin: 0;
   margin-bottom: 15px;
@@ -1352,6 +1349,8 @@ padding: 0;
 }
 
 .variety-list {
+  font-size: 0;
+  line-height: 0;
   list-style: none;
 }
 
@@ -1361,7 +1360,7 @@ padding: 0;
   margin: 0;
   margin-bottom: 33px;
   padding: 0;
-  padding-top: 42px;
+  padding-top: 41px;
 
   background-color: #e9e9e9;
   background-position: 0 0;
@@ -1399,7 +1398,8 @@ padding: 0;
   bottom: 0;
   left: 0;
 
-  display: none;        /*------------------------  убрать в разработке ------------------*/
+  display: none;
+
 /*
   display: flex;
   flex-wrap: wrap;
@@ -1407,10 +1407,12 @@ padding: 0;
   justify-content: center;
   align-items: center;
 */
+
   width: 100%;
-  padding-top: 30px;
+  padding-top: 24px;
   padding-bottom: 42px;
 
+  font-size: 16px;
   line-height: 18px;
   color: #666666;
   text-align: center;
