@@ -87,14 +87,15 @@ p.logo {
   margin-right: 45px;
 }
 
-p.shop-cart {
+.shop-cart a {
   position: relative;
 
+  display: block;
   padding-top: 25px;
   padding-left: 40px;
 }
 
-.shop-cart::before {
+.shop-cart a::before {
   position: absolute;
   top: 32px;
   left: 0;
@@ -732,9 +733,7 @@ a {
 
 .main-menu a:active,
 .shop-cart a:active {
-  color: #000000;
-
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-menu-current a {
