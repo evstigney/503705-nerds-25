@@ -117,10 +117,10 @@ p.logo {
   margin-bottom: 80px;
 }
 
-.slider-list {
+.slider-buttons-wrapper {
   position: absolute;
-  left: 48%;
-  bottom: 22%;
+  left: 47.1%;
+  bottom: 21.5%;
 
   display: flex;
   margin: 0;
@@ -129,24 +129,25 @@ p.logo {
   list-style: none;
 }
 
-.slider-item:not(:last-child) {
-  margin-right: 30px;
+.slider-button:not(:last-child) {
+  margin-right: 17px;
 }
 
-.slider-list a {
+.slider-button {
   display: inline-block;
-  width: 4px;
-  height: 4px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
 
   background-color: #ffffff;
+  border: none;
   border-radius: 50%;
-  box-shadow: 0 0 0 7px #ffffff;
 }
 
-.slider-item-current a {
+.slider-button-current {
   box-shadow:
-    0 0 0 2px #c2c2c2,
-    0 0 0 7px #ffffff;
+    inset 0 0 0 5px #ffffff,
+    inset 0 0 0 7px #c1c1c1;
 }
 
 .main-feature-list {
