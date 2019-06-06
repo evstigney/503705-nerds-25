@@ -452,15 +452,13 @@ main > .layout-positioner {
 
 }
 
-.range::before {
+.selected-range {
   position: absolute;
 
   width: 152px;
   height: 2px;
 
   background-color: #00ca74;
-
-  content: "";
 }
 
 .range-runner-min,
