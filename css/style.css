@@ -173,6 +173,18 @@ p.logo {
   margin-top: 42px;
 }
 
+.slider1 {
+  display: block;
+}
+
+.slider2 {
+  display: none;
+}
+
+.slider3 {
+  display: none;
+}
+
 .services {
   margin-bottom: 40px;
   padding-bottom: 80px;
@@ -766,27 +778,22 @@ a {
 
 .main-feature-item {
   /* высота выставлена временно, чтобы фон был виден целиком */
-  min-height: 430px;
+  min-height: 440px;
 }
 
-.main-feature-item:nth-child(1) {
-  min-height: 440px;
+.slider1 {
   background-image: url("../img/slide1-698x413.png");
   background-position: top 25px right 30px;
   background-repeat: no-repeat;
 }
 
-.main-feature-item:nth-child(2) {
-  min-height: 440px;
-
+.slider2 {
   background-image: url("../img/slide2-663x430.png");
   background-position: top 10px right 0;
   background-repeat: no-repeat;
 }
 
-.main-feature-item:nth-child(3) {
-  min-height: 440px;
-
+.slider3 {
   background-image: url("../img/slide3-759x411.png");
   background-position: top 30px right 0;
   background-repeat: no-repeat;
