@@ -1286,7 +1286,7 @@ padding: 0;
   line-height: 30px;
 }
 
-.price-output output {
+.price-output input[type="text"] {
   display: inline-block;
   width: 80px;
   margin-left: 7px;
