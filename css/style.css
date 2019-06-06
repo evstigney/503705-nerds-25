@@ -517,7 +517,7 @@ main > .layout-positioner {
   padding-left: 35px;
 }
 
-.product-filter-item::before {
+.filters .product-filter-item::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1186,6 +1186,11 @@ textarea:invalid:hover {
   text-transform: uppercase;
 }
 
+.product-filter-list .product-filter-item {
+  padding-left: 28px;
+  padding-top: 5px;
+}
+
 .product-filter-item a {
   color: #000000;
 
@@ -1266,7 +1271,7 @@ textarea:invalid:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 58px;
+  margin-bottom: 53px;
 }
 
 .product-filter-order .product-filter-header {
@@ -1387,11 +1392,6 @@ padding: 0;
   background-color: #4d4d4d;
   box-shadow:
     0 6px 15px 0 rgba(0, 0, 0, 0.25);
-}
-
-.variety-item-img {
-  margin: 0;
-  height: 576px;
 }
 
 .variety-item-card {
