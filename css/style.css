@@ -1002,15 +1002,15 @@ a {
 }
 
 .social-button[href="http://vk.com"] {
-  background-image: url("../img/vk-icon-26x15.png");
+  background-image: url("../img/vk-icon-26x15.svg");
 }
 
 .social-button[href="http://facebook.com"] {
-  background-image: url("../img/fb-icon-12x22.png");
+  background-image: url("../img/fb-icon-12x22.svg");
 }
 
 .social-button[href="http://instagram.com"] {
-  background-image: url("../img/insta-icon-21x21.png");
+  background-image: url("../img/insta-icon-21x21.svg");
 }
 
 .social-button:active {
