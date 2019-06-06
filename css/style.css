@@ -959,7 +959,7 @@ a {
   list-style: none;
 }
 
-.social-button {
+.social-item {
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -972,18 +972,41 @@ a {
   border-radius: 50%;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-item:hover,
+.social-item:focus {
   background-color: #e74246;
 }
 
-.social-button:active {
+.social-item:active {
   background-color: #d7373b;
 
   box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.social-button:active img {
+.social-button {
+  display: block;
+  width: 80px;
+  height: 80px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  opacity: 1;
+}
+
+.social-button[href="http://vk.com"] {
+  background-image: url("../img/vk-icon-26x15.png");
+}
+
+.social-button[href="http://facebook.com"] {
+  background-image: url("../img/fb-icon-12x22.png");
+}
+
+.social-button[href="http://instagram.com"] {
+  background-image: url("../img/insta-icon-21x21.png");
+}
+
+.social-button:active {
   opacity: 0.3;
 }
 
