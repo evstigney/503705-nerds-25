@@ -503,7 +503,7 @@ main > .layout-positioner {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-left: 35px;
+  padding-left: 27px;
 }
 
 .product-filter-item::before {
@@ -1200,23 +1200,23 @@ textarea:invalid:hover {
   left: 0;
 }
 
-.filter-increasing .triangle::before {
+.filter-increasing.triangle::before {
   top: -10px;
 }
 
-.filter-order .triangle {
+.filter-order.triangle {
   opacity: 0.3;
 }
 
-.filter-order:hover .triangle,
-.filter-order:focus .triangle {
+.filter-order:hover.triangle,
+.filter-order:focus.triangle {
   opacity: 0.6;
 }
 
-.filter-order:active .triangle,
-.filter-order-current .triangle,
-.filter-order-current:hover .triangle,
-.filter-order-current:focus .triangle {
+.filter-order:active.triangle,
+.filter-order-current.triangle,
+.filter-order-current:hover.triangle,
+.filter-order-current:focus.triangle {
   opacity: 1;
 }
 
@@ -1260,12 +1260,11 @@ padding: 0;
 
 .price-output output {
   display: inline-block;
-  min-width: 80px;
+  width: 80px;
   margin-left: 7px;
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
-
 
   font-size: inherit;
   line-height: 38px;
@@ -1278,7 +1277,7 @@ padding: 0;
 }
 
 .output-min {
-  margin-right: 30px;
+  margin-right: 33px;
 }
 /*------------------------!!!!!!!!!! ПРИ ВЕРСТКЕ ПОСМОТРЕТЬ ВЛОЖЕННОСТИ В ФИЛЬТРАХ ------------ */
 .product-filter-form label,

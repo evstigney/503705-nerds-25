@@ -59,16 +59,12 @@
                 </div>
               </div>
               <div class="price-output-wrapper">
-              <b class="visually-hidden">
-                Вы выбрали стоимость:
-              </b>
+              <span class="visually-hidden">Вы выбрали стоимость:</span>
               <label class="price-output output-min">
-                от
-                <output name="priceOutputMin">0</output>
+                от <output name="priceOutputMin" contenteditable="true">0</output>
               </label>
               <label class="price-output output-max">
-                до
-                <output name="priceOutputMax">15000</output>
+                до <output name="priceOutputMax" contenteditable="true">15 000</output>
               </label>
               </div>
             </fieldset>
@@ -129,12 +125,10 @@
                 <a href="#">по названию</a>
               </li>
             </ul>
-            <a class="filter-order filter-order-current filter-decreasing" href="decreasing.html">
-              <div class="triangle"></div>
+            <a class="filter-order filter-order-current filter-decreasing triangle" href="decreasing.html">
               <span class="visually-hidden">в порядке убывания</span>
             </a>
-            <a class="filter-order filter-increasing" href="increasing.html">
-              <div class="triangle"></div>
+            <a class="filter-order filter-increasing triangle" href="increasing.html">
               <span class="visually-hidden">в порядке возрастания</span>
             </a>
           </div>
