@@ -63,7 +63,7 @@ main {
 
 .page-header .layout-positioner {
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: space-between;
 }
 
@@ -87,6 +87,8 @@ p.logo {
 
 .main-menu-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
   margin: 0;
   padding: 0;
 }
@@ -767,6 +769,8 @@ a {
   position: absolute;
   left: 2px;
   bottom: -10px;
+  z-index:1;
+
   width: calc(100% - 3px);
   height: 2px;
 
@@ -1304,10 +1308,10 @@ padding: 0;
 
 .price-output input[type="text"] {
   display: inline-block;
-  width: 80px;
+  width: 78px;
   margin-left: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
   padding-top: 6px;
   padding-bottom: 10px;
   box-sizing: border-box;
@@ -1323,7 +1327,7 @@ padding: 0;
 }
 
 .output-min {
-  margin-right: 33px;
+  margin-right: auto;
 }
 /*------------------------!!!!!!!!!! ПРИ ВЕРСТКЕ ПОСМОТРЕТЬ ВЛОЖЕННОСТИ В ФИЛЬТРАХ ------------ */
 .product-filter-form label,
