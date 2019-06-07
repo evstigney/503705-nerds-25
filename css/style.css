@@ -3,7 +3,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 1440px;
   margin: auto;
   padding: 0;
 
@@ -349,6 +348,8 @@ main > .layout-positioner {
   height: 418px;
 
   background-color: #eeeeee;
+
+  overflow-x: hidden;
 }
 
 .map {
@@ -359,7 +360,7 @@ main > .layout-positioner {
   text-align: center;
 
   transform: translate( -50%, 0);
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 .contacts-card {
