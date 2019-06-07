@@ -713,6 +713,7 @@ a {
 
 .main-feature-item .button {
   width: 240px;
+  margin-bottom: 40px;
 }
 
 .services-item .button {
@@ -793,25 +794,24 @@ a {
 }
 
 .main-feature-item {
-  /* высота выставлена временно, чтобы фон был виден целиком */
   min-height: 440px;
 }
 
 .slider1 {
   background-image: url("../img/slide1-698x413.png");
-  background-position: top 25px right 30px;
+  background-position: bottom 0 right 30px;
   background-repeat: no-repeat;
 }
 
 .slider2 {
   background-image: url("../img/slide2-663x430.png");
-  background-position: top 10px right 0;
+  background-position: bottom 0 right 0;
   background-repeat: no-repeat;
 }
 
 .slider3 {
   background-image: url("../img/slide3-759x411.png");
-  background-position: top 30px right 0;
+  background-position: bottom 0 right 0;
   background-repeat: no-repeat;
 }
 
