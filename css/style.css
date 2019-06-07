@@ -67,7 +67,7 @@ main {
   justify-content: space-between;
 }
 
-p.logo {
+.logo {
   position: relative;
   z-index: 2;
 
