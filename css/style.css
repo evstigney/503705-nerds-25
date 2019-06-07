@@ -76,7 +76,7 @@ p.logo {
   overflow-y: visible;
 }
 
-.inner-page .logo:active {
+.inner-page .logo-img:active {
   opacity: 0.3;
 }
 
