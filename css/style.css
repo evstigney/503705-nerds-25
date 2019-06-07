@@ -97,7 +97,7 @@ main {
   margin-right: 45px;
 }
 
-.shop-cart a {
+.shop-cart {
   position: relative;
 
   display: block;
@@ -105,7 +105,7 @@ main {
   padding-left: 40px;
 }
 
-.shop-cart a::before {
+.shop-cart::before {
   position: absolute;
   top: 32px;
   left: 0;
@@ -747,7 +747,7 @@ a {
 }
 
 .main-menu a,
-.shop-cart a {
+.shop-cart {
   color: #000000;
 
   background-color: #eeeeee;
@@ -755,13 +755,13 @@ a {
 
 .main-menu a:hover,
 .main-menu a:focus,
-.shop-cart a:hover,
-.shop-cart a:focus {
+.shop-cart:hover,
+.shop-cart:focus {
   color: #fb565a;
 }
 
-.main-menu a:active,
-.shop-cart a:active {
+.main-menu:active,
+.shop-cart:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
