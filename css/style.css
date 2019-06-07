@@ -1144,6 +1144,7 @@ textarea[name="write-us-text"] {
 
   background-color: transparent;
   border: 2px solid #d7dcde;
+  border-radius: 2px;
   outline: none;
 }
 
@@ -1333,6 +1334,10 @@ padding: 0;
   border-radius: 4px;
 }
 
+.price-output input[type="text"]:focus {
+  border: 2px solid black;
+}
+
 .output-min {
   margin-right: auto;
 }
@@ -1423,15 +1428,11 @@ padding: 0;
   bottom: 0;
   left: 0;
 
-  display: none;
-
-/*
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-*/
 
   width: 100%;
   padding-top: 24px;
@@ -1443,14 +1444,13 @@ padding: 0;
   text-align: center;
 
   background-color: #eeeeee;
+
+  visibility: hidden;
 }
 
-.variety-item:hover .variety-item-card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.variety-item:hover .variety-item-card,
+.variety-item:focus .variety-item-card {
+  visibility: visible;
 }
 
 .variety-item-header {
