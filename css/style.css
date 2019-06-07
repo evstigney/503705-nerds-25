@@ -315,7 +315,7 @@ p.about-us-header {
 
 .partners-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
@@ -330,6 +330,10 @@ p.about-us-header {
   width: 260px;
   margin: 0;
   padding: 0;
+}
+
+.partners-item:not(:nth-of-type(4n)) {
+  margin-right: 40px;
 }
 
 main > .layout-positioner {
@@ -948,7 +952,7 @@ a {
   opacity: 0.1;
 }
 
-.partners-item:not(:last-child)::after {
+.partners-item:not(:nth-of-type(4n))::after {
   position: absolute;
   top: 3px;
   right: -20px;
