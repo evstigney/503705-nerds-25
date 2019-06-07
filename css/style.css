@@ -396,6 +396,8 @@ main > .layout-positioner {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 370px;
   margin: 0;
   padding: 0;
   margin-right: 135px;
@@ -403,6 +405,7 @@ main > .layout-positioner {
 
 .social-item {
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
 }
 
