@@ -1077,10 +1077,10 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /*----------ЭТИ ПАРАМЕТРЫ ПОКАЗЫВАЮТ МОДАЛЬНО ОКНО ОБРАТНОЙ СВЯЗИ
-  display: flex;
+/*
+  display: flex;  ----------ЭТИ ПАРАМЕТРЫ ПОКАЗЫВАЮТ МОДАЛЬНО ОКНО ОБРАТНОЙ СВЯЗИ
   flex-direction: column;
-  */
+*/
 
   display: none;   /*-----------УБРАТЬ В РАЗРАБОТКЕ-------------*/
 
@@ -1449,7 +1449,9 @@ padding: 0;
 }
 
 .variety-item:hover .variety-item-card,
-.variety-item:focus .variety-item-card {
+.variety-item:focus .variety-item-card,
+.variety-item-card:hover,
+.variety-item-card:focus {
   visibility: visible;
 }
 
