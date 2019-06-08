@@ -1331,7 +1331,7 @@ padding: 0;
 }
 
 .price-output input[type="text"]:focus {
-  border: 2px solid black;
+  outline: 2px solid black;
 }
 
 .output-min {
