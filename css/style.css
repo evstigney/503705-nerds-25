@@ -634,7 +634,7 @@ input[type="checkbox"]:checked + .filter-checkbox-item::after {
   display: flex;
   align-items: center;
 
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .pagination-list {
@@ -649,7 +649,7 @@ input[type="checkbox"]:checked + .filter-checkbox-item::after {
 }
 
 li .pagination-item {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 /*--------------------------------ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ----------------------------------*/
@@ -1229,6 +1229,8 @@ textarea:invalid:hover {
 .triangle {
   display: inline-block;
   position: relative;
+  top: 8px;
+
   width: 13px;
   height: 10px;
 
@@ -1287,8 +1289,8 @@ textarea:invalid:hover {
 .product-filter-group.product-filter-order {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 53px;
+  align-items: flex-start;
+  margin-bottom: 35px;
 }
 
 .product-filter-order .product-filter-header {
