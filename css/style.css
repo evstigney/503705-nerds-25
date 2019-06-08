@@ -1337,14 +1337,18 @@ padding: 0;
 .output-min {
   margin-right: auto;
 }
-/*------------------------!!!!!!!!!! ПРИ ВЕРСТКЕ ПОСМОТРЕТЬ ВЛОЖЕННОСТИ В ФИЛЬТРАХ ------------ */
+
 .product-filter-form label,
 .product-filter-form input:checked + label {
   opacity: 0.6;
 }
 
-
-.product-filter-form input:hover + label {
+input:checked + .product-filter-item:hover,
+input:checked + .product-filter-item:focus,
+input:checked + .product-filter-item:active,
+.product-filter-item:hover,
+.product-filter-item:focus,
+.product-filter-item:active {
   opacity: 1;
 }
 
