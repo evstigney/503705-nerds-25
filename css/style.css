@@ -533,6 +533,7 @@ main > .layout-positioner {
 
 .product-filter-item {
   position: relative;
+  top: 3px;
   display: block;
   margin: 0;
   margin-bottom: 20px;
