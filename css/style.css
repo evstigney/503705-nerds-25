@@ -747,22 +747,17 @@ a {
   list-style: none;
 }
 
-/*.shop-cart*/
 .main-menu a {
   color: #000000;
 
   background-color: #eeeeee;
 }
 
-/*
-.shop-cart:hover,
-.shop-cart:focus*/
 .main-menu a:hover,
 .main-menu a:focus {
   color: #fb565a;
 }
 
-/*.shop-cart:active*/
 .main-menu a:active {
   color: rgba(0, 0, 0, 0.3);
 }
