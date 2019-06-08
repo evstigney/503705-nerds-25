@@ -127,7 +127,7 @@ main {
 
 .slider-buttons-wrapper {
   position: absolute;
-  left: 47.1%;
+  left: 47.4%;
   bottom: 95px;
 
   display: flex;
@@ -169,7 +169,7 @@ main {
 
 
   padding-top: 85px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .main-feature-item p {
