@@ -559,13 +559,11 @@ main > .layout-positioner {
   content: "";
 }
 
-.product-filter-form input[type="radio"]:hover::before,
-.product-filter-form input[type="radio"]:focus::before {
+.product-filter-form input[type="radio"]:hover::before {
   border-color: #000000;
 }
 
-.product-filter-form input[type="radio"]:checked:hover::before,
-.product-filter-form input[type="radio"]:checked:focus::before {
+.product-filter-form input[type="radio"]:checked:hover::before {
   background-color: #000000;
   border-color: #000000;
 }
@@ -634,6 +632,51 @@ main > .layout-positioner {
 
 .product-filter-form input[type="checkbox"]:checked::after {
   display: block;
+}
+
+.product-filter-form input[type="checkbox"]:hover::before,
+.product-filter-form input[type="checkbox"]:checked:hover::before {
+  border-color: #000000;
+}
+
+.product-filter-form input[type="checkbox"]:checked:hover::after {
+  box-shadow:
+    -1px 1px 0 1px #ffffff,
+    -3px 3px 0 3px #000000,
+    -4px 4px 0 4px #ffffff;
+}
+
+.product-filter-form input[type="checkbox"]::before,
+.product-filter-form input[type="checkbox"]:checked::before {
+  border-color: #b8b8b8;
+}
+
+.product-filter-form input[type="checkbox"]:checked::after {
+  box-shadow:
+    -1px 1px 0 1px #ffffff,
+    -3px 3px 0 3px #b8b8b8,
+    -4px 4px 0 4px #ffffff;
+}
+
+.product-filter-form input[type="checkbox"]:disabled::before,
+.product-filter-form input[type="checkbox"]:disabled:hover::before,
+.product-filter-form input[type="checkbox"]:disabled:focus::before,
+.product-filter-form input[type="checkbox"]:disabled:active::before,
+.product-filter-form input[type="checkbox"]:disabled:checked::before,
+.product-filter-form input[type="checkbox"]:disabled:checked:hover::before,
+.product-filter-form input[type="checkbox"]:disabled:checked:focus::before,
+.product-filter-form input[type="checkbox"]:disabled:checked:active::before {
+  border-color: #ededed;
+}
+
+.product-filter-form input[type="checkbox"]:disabled:checked::after,
+.product-filter-form input[type="checkbox"]:disabled:checked:hover::after,
+.product-filter-form input[type="checkbox"]:disabled:checked:focus::after,
+.product-filter-form input[type="checkbox"]:disabled:checked:active::after {
+  box-shadow:
+    -1px 1px 0 1px #ffffff,
+    -3px 3px 0 3px #ededed,
+    -4px 4px 0 4px #ffffff;
 }
 
 .filter-order:not(:last-of-type) {
