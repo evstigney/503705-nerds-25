@@ -1467,6 +1467,10 @@ padding: 0;
   visibility: visible;
 }
 
+.variety-item:focus-within .variety-item-card {
+  visibility: visible;
+}
+
 .variety-item-header {
   font-size: 18px;
   line-height: 30px;
