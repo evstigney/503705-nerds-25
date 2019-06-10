@@ -100,28 +100,22 @@ main {
 }
 
 .main-slider {
-  position: relative;
-
   margin-bottom: 80px;
 }
 
-.slider-buttons-wrapper {
-  position: absolute;
-  left: 47.4%;
-  bottom: 95px;
-
-  display: flex;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.slider-button:not(:last-child) {
-  margin-right: 17px;
+.main-slider .layout-positioner {
+  position: relative;
 }
 
 .slider-button {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+}
+
+.slider-button-view {
+  position: absolute;
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -132,15 +126,29 @@ main {
   border-radius: 50%;
 }
 
-.slider-button-current {
+.slider-button1 + .slider-button-view {
+  left: 555px;
+  bottom: 96px;
+}
+
+.slider-button2 + .slider-button-view {
+  left: 590px;
+  bottom: 96px;
+}
+
+.slider-button3 + .slider-button-view {
+  left: 626px;
+  bottom: 96px;
+}
+
+.slider-button:checked + .slider-button-view {
   box-shadow:
     inset 0 0 0 5px #ffffff,
     inset 0 0 0 7px #c1c1c1;
 }
 
-.main-feature-list {
-  margin: 0;
-  padding: 0;
+.slider-button:focus + .slider-button-view {
+  outline: 2px solid #000000;
 }
 
 .main-feature-item b {
@@ -148,7 +156,7 @@ main {
   width: 560px;
 
 
-  padding-top: 85px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -159,7 +167,12 @@ main {
 }
 
 .main-feature-item .button {
-  margin-top: 42px;
+  margin-top: 40px;
+}
+.slider-button1:checked ~ .slider1,
+.slider-button2:checked ~ .slider2,
+.slider-button3:checked ~ .slider3 {
+  display: block;
 }
 
 .slider1 {
@@ -172,10 +185,6 @@ main {
 
 .slider3 {
   display: none;
-}
-
-.current-slider {
-  display: block;
 }
 
 .services {
@@ -347,6 +356,20 @@ main > .layout-positioner {
   top: 0;
   left: 50%;
 
+  text-align: center;
+
+  transform: translate( -50%, 0);
+}
+
+.interactive-map {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 1440px;
+  height: 418px;
+
+  background-color: rgba(255, 0, 0, 0.5);
   text-align: center;
 
   transform: translate( -50%, 0);
@@ -824,13 +847,8 @@ a {
   background-color: #eeeeee;
 }
 
-.main-feature-list {
-  margin-top: 0;
-  list-style: none;
-}
-
 .main-feature-item {
-  min-height: 440px;
+  min-height: 418px;
 }
 
 .slider1 {

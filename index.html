@@ -32,32 +32,30 @@
       <section class="main-slider">
         <div class="layout-positioner">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <div class="slider-buttons-wrapper">
-            <button class="slider-button slider-button1 slider-button-current" aria-label="Первый слайдер - Долго, дорого, скрупулезно." onclick="showSlider();"></button>
-            <button class="slider-button slider-button2" aria-label="Второй слайдер - Любим математику как никто другой" onclick="showSlider();"></button>
-            <button class="slider-button slider-button3" aria-label="Третий слайдер - Только ночь, только хардкор" onclick="showSlider();"></button>
+          <input class="slider-button slider-button1" type="radio" name="slider" value="slider1" aria-label="Первый слайдер - Долго, дорого, скрупулезно." checked><div class="slider-button-view"></div>
+          <input class="slider-button slider-button2" type="radio" name="slider" value="slider2" aria-label="Второй слайдер - Любим математику как никто другой"><div class="slider-button-view"></div>
+          <input class="slider-button slider-button3" type="radio" name="slider" value="slider3" aria-label="Третий слайдер - Только ночь, только хардкор"><div class="slider-button-view"></div>
+          <div class="main-feature-item slider1">
+            <div class="main-feature-item-wrapper">
+              <b>Долго, дорого, скрупулезно.</b>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
           </div>
-          <ul class="main-feature-list">
-            <li class="main-feature-item slider1 current-slider">
-                <b>Долго, дорого, скрупулезно.</b>
-                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-                <a class="button" href="#">Узнать больше</a>
-            </li>
-            <li class="main-feature-item slider2">
-              <div class="main-feature-item-wrapper">
-                <b>Любим математику как никто другой</b>
-                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <a class="button" href="#">Узнать больше</a>
-              </div>
-            </li>
-            <li class="main-feature-item slider3">
-              <div class="main-feature-item-wrapper">
-                <b>Только ночь, только хардкор</b>
-                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <a class="button" href="#">Узнать больше</a>
-              </div>
-            </li>
-          </ul>
+          <div class="main-feature-item slider2">
+            <div class="main-feature-item-wrapper">
+              <b>Любим математику как никто другой</b>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="main-feature-item slider3">
+            <div class="main-feature-item-wrapper">
+              <b>Только ночь, только хардкор</b>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="button" href="#">Узнать больше</a>
+            </div>
+          </div>
         </div>
       </section>
       <div class="layout-positioner">
@@ -146,6 +144,8 @@
         </div>
         <div>
           <img  class="map" src="img/map-1440x418.png" width="1440" height="418" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <div class="interactive-map">
+          </div>
         </div>
       </section>
     </main>
@@ -195,9 +195,9 @@
       </form>
       <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
-    <script type="text/javascript" src="js/script.js"></script>
-  <!-- для отправки скрипт отключить и подключить scriptmin.js
-    <script type="text/javascript" src="js/scriptmin.js"></script>
+  <!--  <script src="js/script.js"></script>
+    для отправки скрипт отключить и подключить scriptmin.js
+    <script src="js/scriptmin.js"></script>
   -->
   </body>
 </html>
