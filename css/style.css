@@ -163,7 +163,7 @@ main {
 }
 
 .slider1 {
-  display: block;
+  display: none;
 }
 
 .slider2 {
@@ -172,6 +172,10 @@ main {
 
 .slider3 {
   display: none;
+}
+
+.current-slider {
+  display: block;
 }
 
 .services {
@@ -1466,10 +1470,10 @@ padding: 0;
   -o-transition-property: opacity;
   transition-property: opacity;
 
-  -webkit-transition-duration: .5s;
-  -moz-transition-duration: .5s;
-  -o-transition-duration: .5s;
-  transition-duration: .5s;
+  -webkit-transition-duration: .3s;
+  -moz-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  transition-duration: .3s;
 }
 
 .variety-item:hover .variety-item-card,

@@ -33,12 +33,12 @@
         <div class="layout-positioner">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <div class="slider-buttons-wrapper">
-            <button class="slider-button slider-button1 slider-button-current" aria-label="Первый слайдер - Долго, дорого, скрупулезно."></button>
-            <button class="slider-button slider-button2" aria-label="Второй слайдер - Любим математику как никто другой"></button>
-            <button class="slider-button slider-button3" aria-label="Третий слайдер - Только ночь, только хардкор"></button>
+            <button class="slider-button slider-button1 slider-button-current" aria-label="Первый слайдер - Долго, дорого, скрупулезно." onclick="showSlider();"></button>
+            <button class="slider-button slider-button2" aria-label="Второй слайдер - Любим математику как никто другой" onclick="showSlider();"></button>
+            <button class="slider-button slider-button3" aria-label="Третий слайдер - Только ночь, только хардкор" onclick="showSlider();"></button>
           </div>
           <ul class="main-feature-list">
-            <li class="main-feature-item slider1">
+            <li class="main-feature-item slider1 current-slider">
                 <b>Долго, дорого, скрупулезно.</b>
                 <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                 <a class="button" href="#">Узнать больше</a>
@@ -142,7 +142,7 @@
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
           <p><a class="tel-number">тел. +7 (812) 275-75-75</a></p>
-          <a class="button">Напишите нам</a>
+          <a class="button" tabindex="0">Напишите нам</a>
         </div>
         <div>
           <img  class="map" src="img/map-1440x418.png" width="1440" height="418" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
@@ -195,5 +195,9 @@
       </form>
       <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
     </section>
+    <script type="text/javascript" src="js/script.js"></script>
+  <!-- для отправки скрипт отключить и подключить scriptmin.js
+    <script type="text/javascript" src="js/scriptmin.js"></script>
+  -->
   </body>
 </html>
