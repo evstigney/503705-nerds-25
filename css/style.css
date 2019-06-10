@@ -1405,6 +1405,7 @@ padding: 0;
   margin-bottom: 33px;
   padding: 0;
   padding-top: 41px;
+  overflow: hidden;
 
   background-color: #e9e9e9;
   background-position: 0 0;
@@ -1457,22 +1458,33 @@ padding: 0;
 
   background-color: #eeeeee;
 
-  visibility: hidden;
+  opacity: 0;
+
+  /* АНИМАЦИЯ */
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .variety-item:hover .variety-item-card,
 .variety-item:focus .variety-item-card,
 .variety-item-card:hover,
 .variety-item-card:focus {
-  visibility: visible;
+  opacity: 1;
 }
 
 .variety-item:focus-within .variety-item-card {
-  visibility: visible;
+  opacity: 1;
 }
 
 .variety-item-card:focus-within {
-  visibility: visible;
+  opacity: 1;
 }
 
 .variety-item-header {
