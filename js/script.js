@@ -2,7 +2,6 @@
 
 var showSlider = function () {
     var target = event.target;
-    console.log(target);
     if (target.classList.contains('slider-button-current')) {
       return;
     } else {
