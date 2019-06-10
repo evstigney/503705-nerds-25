@@ -169,21 +169,21 @@ main {
 .main-feature-item .button {
   margin-top: 40px;
 }
-.slider-button1:checked ~ .slider1,
-.slider-button2:checked ~ .slider2,
-.slider-button3:checked ~ .slider3 {
+.slider-button1:checked ~ .slide1,
+.slider-button2:checked ~ .slide2,
+.slider-button3:checked ~ .slide3 {
   display: block;
 }
 
-.slider1 {
+.slide1 {
   display: none;
 }
 
-.slider2 {
+.slide2 {
   display: none;
 }
 
-.slider3 {
+.slide3 {
   display: none;
 }
 
@@ -851,19 +851,19 @@ a {
   min-height: 418px;
 }
 
-.slider1 {
+.slide1 {
   background-image: url("../img/slide1-698x413.png");
   background-position: bottom 0 right 30px;
   background-repeat: no-repeat;
 }
 
-.slider2 {
+.slide2 {
   background-image: url("../img/slide2-663x430.png");
   background-position: bottom 0 right 0;
   background-repeat: no-repeat;
 }
 
-.slider3 {
+.slide3 {
   background-image: url("../img/slide3-759x411.png");
   background-position: bottom 0 right 0;
   background-repeat: no-repeat;

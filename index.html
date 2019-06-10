@@ -32,24 +32,33 @@
       <section class="main-slider">
         <div class="layout-positioner">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <input class="slider-button slider-button1" type="radio" name="slider" value="slider1" aria-label="Первый слайдер - Долго, дорого, скрупулезно." checked><div class="slider-button-view"></div>
-          <input class="slider-button slider-button2" type="radio" name="slider" value="slider2" aria-label="Второй слайдер - Любим математику как никто другой"><div class="slider-button-view"></div>
-          <input class="slider-button slider-button3" type="radio" name="slider" value="slider3" aria-label="Третий слайдер - Только ночь, только хардкор"><div class="slider-button-view"></div>
-          <div class="main-feature-item slider1">
+          <input class="slider-button slider-button1" type="radio" name="slider" id="slider-button1-radio" value="slide1" checked>
+          <label class="slider-button-view" for="slider-button1-radio">
+            <span class="visually-hidden">Первый слайд - Долго, дорого, скрупулезно.</span>
+          </label>
+          <input class="slider-button slider-button2" type="radio" name="slider" id="slider-button2-radio" value="slide2">
+          <label class="slider-button-view" for="slider-button2-radio">
+            <span class="visually-hidden">Второй слайд - Любим математику как никто другой</span>
+          </label>
+          <input class="slider-button slider-button3" type="radio" name="slider" id="slider-button3-radio" value="slide3">
+          <label class="slider-button-view" for="slider-button3-radio">
+            <span class="visually-hidden">Третий слайд - Только ночь, только хардкор</span>
+          </label>
+          <div class="main-feature-item slide1">
             <div class="main-feature-item-wrapper">
               <b>Долго, дорого, скрупулезно.</b>
               <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
               <a class="button" href="#">Узнать больше</a>
             </div>
           </div>
-          <div class="main-feature-item slider2">
+          <div class="main-feature-item slide2">
             <div class="main-feature-item-wrapper">
               <b>Любим математику как никто другой</b>
               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
               <a class="button" href="#">Узнать больше</a>
             </div>
           </div>
-          <div class="main-feature-item slider3">
+          <div class="main-feature-item slide3">
             <div class="main-feature-item-wrapper">
               <b>Только ночь, только хардкор</b>
               <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
