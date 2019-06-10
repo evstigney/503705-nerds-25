@@ -151,6 +151,11 @@ main {
   outline: 2px solid #000000;
 }
 
+.main-feature-list {
+  margin: 0;
+  padding: 0;
+}
+
 .main-feature-item b {
   display: block;
   width: 560px;
@@ -169,9 +174,9 @@ main {
 .main-feature-item .button {
   margin-top: 40px;
 }
-.slider-button1:checked ~ .slide1,
-.slider-button2:checked ~ .slide2,
-.slider-button3:checked ~ .slide3 {
+.slider-button1:checked ~ .main-feature-list .slide1,
+.slider-button2:checked ~ .main-feature-list .slide2,
+.slider-button3:checked ~ .main-feature-list .slide3 {
   display: block;
 }
 
