@@ -697,6 +697,18 @@ input[type="radio"]:focus {
   padding: 0;
 }
 
+.variety-item-sedona p {
+  width: 207px;
+}
+
+.variety-item-barbershop p {
+  width: 199px;
+}
+
+.variety-item-mishka p {
+  width: 206px;
+}
+
 .pagination-wrapper {
   display: flex;
   align-items: center;
@@ -1496,7 +1508,7 @@ padding: 0;
   text-align: center;
 
   background-color: #eeeeee;
-
+/* --------------------------------ВРЕМЕННО!!!!!!-----------------*/
   opacity: 0;
 
   /* АНИМАЦИЯ */
