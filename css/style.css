@@ -510,7 +510,6 @@ p.about-us-header {
   height: 2px;
 
   background-color: #d7dcde;
-
 }
 
 .selected-range {
@@ -1147,12 +1146,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-/*
-  display: flex;  ----------ЭТИ ПАРАМЕТРЫ ПОКАЗЫВАЮТ МОДАЛЬНО ОКНО ОБРАТНОЙ СВЯЗИ
-*/
-
-  display: none;   /*-----------УБРАТЬ В РАЗРАБОТКЕ-------------*/
+  display: none;
   flex-direction: column;
 
   width: 765px;
@@ -1381,9 +1375,9 @@ textarea:invalid:hover {
 }
 
 .product-filter-order .product-filter-header {
-margin: 0;
-margin-right: auto;
-padding: 0;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
 }
 
 .product-filter-form {
@@ -1514,7 +1508,7 @@ padding: 0;
   text-align: center;
 
   background-color: #eeeeee;
-/* --------------------------------ВРЕМЕННО!!!!!!-----------------*/
+
   opacity: 0;
 
   /* АНИМАЦИЯ */
