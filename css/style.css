@@ -55,7 +55,11 @@ main {
   overflow-y: visible;
 }
 
-.inner-page .logo-img:active {
+.logo:hover .logo-img {
+  opacity: 0.8;
+}
+
+.logo:active .logo-img {
   opacity: 0.3;
 }
 
@@ -387,7 +391,7 @@ main > .layout-positioner {
   z-index: 2;
 
   width: 220px;
-  padding: 50px;
+  padding: 49px;
 }
 
 .contacts-card h3 {
@@ -407,7 +411,7 @@ main > .layout-positioner {
 }
 
 .contacts-card p:last-of-type {
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 
 .page-footer .layout-positioner {
@@ -437,7 +441,7 @@ main > .layout-positioner {
 
 .social-offer {
   margin: 0;
-  margin-top: 5px;
+  margin-top: 2px;
   padding: 0;
 }
 
