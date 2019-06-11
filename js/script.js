@@ -10,7 +10,7 @@ var openModalWriteUs = function () {
       windowPosition += 1;
       modalWindow.style.top = windowPosition + '%';
     }
-  }, 100);
+  }, 10);
 };
 
 var closeModalWriteUs = function () {
@@ -21,5 +21,5 @@ var closeModalWriteUs = function () {
     windowPosition -= 1;
     modalWindow.style.top = windowPosition + '%';
     }
-  }, 1);
+  }, 10);
 };
