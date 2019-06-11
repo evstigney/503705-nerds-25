@@ -125,6 +125,8 @@ main {
   height: 18px;
   box-sizing: border-box;
 
+  vertical-align: middle;
+
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
@@ -1064,6 +1066,7 @@ a {
 
   line-height: 87px;
   text-align: center;
+  vertical-align: middle;
 
   background-color: #e1e1e1;
 
@@ -1318,6 +1321,8 @@ textarea:invalid:hover {
 
   width: 13px;
   height: 10px;
+
+  vertical-align: middle;
 
   overflow: hidden;
 }
@@ -1582,6 +1587,7 @@ padding: 0;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+  vertical-align: middle;
 
   background-color: #eeeeee;
 }
