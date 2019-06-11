@@ -16,7 +16,7 @@ body {
   -ms-overflow-x: hidden;
 }
 
-main {
+.main-content {
   min-width: 1200px;
   margin-bottom: 70px;
 }
@@ -338,7 +338,7 @@ p.about-us-header {
   margin-right: 40px;
 }
 
-main > .layout-positioner {
+.main-content > .layout-positioner {
   margin-bottom: 80px;
 }
 
@@ -404,7 +404,7 @@ main > .layout-positioner {
 
 .contacts-card p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding: 0;
 }
 
@@ -413,7 +413,7 @@ main > .layout-positioner {
 }
 
 .contacts-card p:last-of-type {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .page-footer .layout-positioner {
@@ -443,8 +443,8 @@ main > .layout-positioner {
 
 .social-offer {
   margin: 0;
-  margin-top: 2px;
   padding: 0;
+  padding-top: 9px;
 }
 
 .social-slogan {
