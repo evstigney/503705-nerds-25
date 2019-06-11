@@ -200,21 +200,22 @@ body {
 
 .services {
   margin-bottom: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 38px;
 }
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .services-item {
   width: 300px;
-}
-
-.services-item:not(:last-child) {
-  margin-right: 100px;
+  margin-right: 61px;
+  margin-bottom: 40px;
+  padding-top: 146px;
 }
 
 .services-item p {
@@ -444,7 +445,7 @@ p.about-us-header {
 .social-offer {
   margin: 0;
   padding: 0;
-  padding-top: 9px;
+  padding-top: 5px;
 }
 
 .social-slogan {
@@ -926,23 +927,19 @@ a {
   list-style: none;
 }
 
-.services-item {
-  padding-top: 146px;
-}
-
-.services-item:nth-child(1) {
+.service-sites {
   background-image: url("../img/index-illustration-1-300x146.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
-.services-item:nth-child(2) {
+.service-apps {
   background-image: url("../img/index-illustration-2-300x146.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
-.services-item:nth-child(3) {
+.service-presentations {
   background-image: url("../img/index-illustration-3-300x146.png");
   background-position: 0 0;
   background-repeat: no-repeat;
