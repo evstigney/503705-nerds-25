@@ -10,20 +10,29 @@ var setBeginPosition = function (element) { // устанавливаем нач
   buttonWriteUs.removeAttribute('href');
 };
 
-var setFinalPosition = function (element) { // устанавливаем конечную позицию элемента
-  element.style.display = 'none';
-  element.style.top = '50%';
-  buttonWriteUs.setAttribute('href', 'writeus.html');
-};
-
 var showElement = function (element) { // показываем элемент
   setBeginPosition(element);
-  element.style.top = '50%';
+  var position = parseInt(element.style.top);
+  var animation = setInterval(function () {
+    if (position >= 50) {
+      clearInterval(animation);
+    } else {
+      position += 1;
+      element.style.top = position + '%';
+    }
+  }, 7);
 };
 
 var hideElement = function (element) { // прячем элемент
-  element.style.top = '-300%';
-  setFinalPosition(element);
+  var position = parseInt(element.style.top);
+  var animation = setInterval(function () {
+    if (position >= 300) {
+      clearInterval(animation);
+    } else {
+      position += 1;
+      element.style.top = position + '%';
+    }
+  }, 1);
 };
 
 var buttonWriteUsHandler = function () { // обработчик показа окна
