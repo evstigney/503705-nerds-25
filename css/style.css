@@ -1155,15 +1155,18 @@ a {
   padding-right: 95px;
   padding-top: 63px;
   padding-bottom: 85px;
-
+/*
   transition-property: top;
   transition-duration: 2s;
+  */
 }
 
+/*
 .modal-write-us-open {
   top: 50%;
   display: flex;
 }
+*/
 
 .modal-write-us h2 {
   margin: 0;
