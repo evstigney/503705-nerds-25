@@ -360,6 +360,20 @@ main > .layout-positioner {
   position: absolute;
   top: 0;
   left: 50%;
+  display: none;
+
+  text-align: center;
+
+  transform: translate( -50%, 0);
+}
+
+.interactive-map {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 1440px;
+  height: 418px;
 
   text-align: center;
 
@@ -386,6 +400,10 @@ main > .layout-positioner {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
+}
+
+.contacts-address {
+  width: 201px;
 }
 
 .contacts-card p:last-of-type {
