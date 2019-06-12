@@ -42,7 +42,6 @@ body {
 
 .page-header .layout-positioner {
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -84,6 +83,7 @@ body {
 
 .shop-cart {
   position: relative;
+
   padding-left: 40px;
 }
 
@@ -113,13 +113,16 @@ body {
 
 .slider-button {
   position: relative;
+
   width: 18px;
   height: 18px;
+
   opacity: 0;
 }
 
 .slider-button-view {
   position: absolute;
+
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -165,8 +168,6 @@ body {
 .main-feature-item b {
   display: block;
   width: 560px;
-
-
   padding-top: 60px;
   padding-bottom: 30px;
 }
@@ -357,10 +358,9 @@ p.about-us-header {
   position: relative;
 
   height: 418px;
+  overflow-x: hidden;
 
   background-color: #eeeeee;
-
-  overflow-x: hidden;
 }
 
 .map {
@@ -426,8 +426,8 @@ p.about-us-header {
   flex-wrap: wrap;
   width: 370px;
   margin: 0;
-  padding: 0;
   margin-right: 30px;
+  padding: 0;
 
   list-style: none;
 }
@@ -459,8 +459,9 @@ p.about-us-header {
 }
 
 .header-wrapper {
-  background-color: #eeeeee;
   margin-bottom: 55px;
+
+  background-color: #eeeeee;
 }
 
 .product-wrapper {
@@ -556,6 +557,7 @@ p.about-us-header {
 .product-filter-item {
   position: relative;
   top: 3px;
+
   display: block;
   margin: 0;
   margin-bottom: 20px;
@@ -566,6 +568,7 @@ p.about-us-header {
 .product-filter-group input[type="checkbox"],
 .product-filter-group input[type="radio"] {
   position: absolute;
+
   width: 25px;
   height: 25px;
 }
@@ -591,6 +594,7 @@ input[type="checkbox"] + .input-view::before {
   position: absolute;
   top: -1px;
   left: 8px;
+
   display: none;
   width: 16px;
   height: 5px;
@@ -685,7 +689,6 @@ input[type="radio"]:focus {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
 }
@@ -1145,16 +1148,17 @@ a {
 .modal-write-us {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+
   display: none;
   flex-direction: column;
-
   width: 765px;
   margin: 0 auto;
   padding-left: 100px;
   padding-right: 95px;
   padding-top: 63px;
   padding-bottom: 85px;
+
+  transform: translate(-50%, -50%);
 }
 
 .modal-write-us h2 {
@@ -1197,9 +1201,9 @@ a {
 input[type="text"],
 input[type="email"],
 textarea[name="write-us-text"] {
-  box-sizing: border-box;
   padding-left: 14px;
   padding-right: 14px;
+  box-sizing: border-box;
 
   font-size: inherit;
   line-height: 18px;
@@ -1266,12 +1270,11 @@ textarea:invalid:hover {
 }
 
 .product-filter-list {
-  list-style: none;
-
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .product-filter-list .product-filter-item {
@@ -1298,16 +1301,15 @@ textarea:invalid:hover {
 }
 
 .triangle {
-  display: inline-block;
   position: relative;
   top: 8px;
 
+  display: inline-block;
   width: 13px;
   height: 10px;
+  overflow: hidden;
 
   vertical-align: middle;
-
-  overflow: hidden;
 }
 
 .triangle::before {
@@ -1373,8 +1375,8 @@ textarea:invalid:hover {
 }
 
 .product-filter-form {
-  color: #283136;
   line-height: 20px;
+  color: #283136;
 
   background-color: #ffffff;
 }
@@ -1443,6 +1445,7 @@ textarea:invalid:hover {
 
 .variety-item {
   position: relative;
+
   width: 360px;
   margin: 0;
   margin-bottom: 33px;
@@ -1489,7 +1492,6 @@ textarea:invalid:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   padding-top: 24px;
   padding-bottom: 42px;
@@ -1637,10 +1639,10 @@ textarea:invalid:hover {
   margin: -1px;
   border: 0;
   padding: 0;
+  overflow: hidden;
 
   white-space: nowrap;
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
