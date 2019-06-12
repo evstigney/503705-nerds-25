@@ -55,9 +55,16 @@ buttonWriteUs.addEventListener('keypress', buttonWriteUsHandler); // добав�
 
 /*------------КАРТА-----------*/
 var map;
+var marker;
 var initMap = function () {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 59.939170, lng: 30.321537},
-    zoom: 17
+    zoom: 17,
+    disableDefaultUI: true
+  }),
+  marker = new google.maps.Marker({
+    position: {lat: 59.938806, lng: 30.323891},
+    map: map,
+    icon: 'img/map-marker.png'
   });
 }
