@@ -52,3 +52,12 @@ buttonWriteUs.addEventListener('click', buttonWriteUsHandler); // добавля
 buttonClose.addEventListener('click', buttonCloseHandler); // добавляем обработчик по клику на кнопке Закрыть
 
 buttonWriteUs.addEventListener('keypress', buttonWriteUsHandler); // добавляем обработчик по нажатию на кнопке Напишите нам
+
+/*------------КАРТА-----------*/
+var map;
+var initMap = function () {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 59.939170, lng: 30.321537},
+    zoom: 17
+  });
+}

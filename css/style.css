@@ -380,8 +380,8 @@ p.about-us-header {
 
   width: 1440px;
   height: 418px;
+  overflow: hidden;
 
-  background-color: rgba(255, 0, 0, 0.5);
   text-align: center;
 
   transform: translate( -50%, 0);
