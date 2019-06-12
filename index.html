@@ -155,6 +155,25 @@
           <div class="interactive-map" id="map"></div>
         </div>
       </section>
+      <section class="modal modal-write-us">
+        <h2>Напишите нам</h2>
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+          <label>
+            <span class="write-us-label">Ваше имя:</span>
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            <span class="write-us-label">Ваш e-mail:</span>
+            <input type="email" name="e-mail" placeholder="email@example.com">
+          </label>
+          <label class="write-us-text-label">
+            <span class="write-us-label">Текст письма:</span>
+            <textarea name="write-us-text" rows="5" placeholder="В свободной форме"></textarea>
+          </label>
+          <input class="button" type="submit" value="Отправить">
+        </form>
+        <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="layout-positioner">
@@ -182,25 +201,6 @@
         </p>
       </div>
     </footer>
-
-    <section class="modal modal-write-us">
-      <h2>Напишите нам</h2>
-      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          <span class="write-us-label">Ваше имя:</span>
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label>
-          <span class="write-us-label">Ваш e-mail:</span>
-          <input type="email" name="e-mail" placeholder="email@example.com">
-        </label>
-        <label class="write-us-text-label">
-          <span class="write-us-label">Текст письма:</span>
-          <textarea name="write-us-text" rows="5" placeholder="В свободной форме"></textarea>
-        </label>
-        <input class="button" type="submit" value="Отправить">
-      </form>
-      <button class="modal-close"><span class="visually-hidden">Закрыть окно</span></button>
-    </section>
     <script src="js/script.js"></script>
+  </body>
 </html>

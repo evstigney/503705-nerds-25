@@ -19,8 +19,9 @@ var showElement = function (element) { // показываем элемент
     } else {
       position += 1;
       element.style.top = position + '%';
+      return element.style.top;
     }
-  }, 7);
+  }, 3);
 };
 
 var hideElement = function (element) { // прячем элемент
@@ -36,12 +37,18 @@ var hideElement = function (element) { // прячем элемент
 };
 
 var buttonWriteUsHandler = function () { // обработчик показа окна
-  showElement(windowWriteUs);
+  if (event.type === 'click' || event.keyCode === 32) {
+    showElement(windowWriteUs);
+  } else {
+    return false;
+  }
 };
 
 var buttonCloseHandler = function () { // обработчик скрытия окна
   hideElement(windowWriteUs);
 };
 
-buttonWriteUs.addEventListener('click', buttonWriteUsHandler); // добавляем обработчик кнопке Напишите нам
-buttonClose.addEventListener('click', buttonCloseHandler); // добавляем обработчик кнопке Закрыть
+buttonWriteUs.addEventListener('click', buttonWriteUsHandler); // добавляем обработчик по клику на кнопке Напишите нам
+buttonClose.addEventListener('click', buttonCloseHandler); // добавляем обработчик по клику на кнопке Закрыть
+
+buttonWriteUs.addEventListener('keypress', buttonWriteUsHandler); // добавляем обработчик по нажатию на кнопке Напишите нам
