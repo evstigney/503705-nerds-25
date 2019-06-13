@@ -67,4 +67,4 @@ var initMap = function () {
     map: map,
     icon: 'img/map-marker.png'
   });
-}
+};
