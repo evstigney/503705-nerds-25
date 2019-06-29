@@ -1192,6 +1192,7 @@ a {
 .write-us-form input[type="text"],
 .write-us-form input[type="email"] {
   width: 361px;
+  height: 50px;
 }
 
 .write-us-form input[type="text"] {
